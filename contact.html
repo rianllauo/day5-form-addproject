@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- navbar section -->
+   <nav>
+      <ul>
+         <div class="nav-menu">
+            <li class="nav-brand">
+               <img src="/img/brandred.png">
+            </li>
+            <li><a href="/index.html" class="menu-item">Home</a></li>
+            <li><a href="/myproject.html" class="menu-item">My Project</a></li>
+         </div>
+         <a href="/contact.html" class="btn-contact">
+            Contact Me
+         </a>
+      </ul>
+   </nav>
+   <!-- navbar section -->
+
+   <main>
+      <!-- contact section -->
+      <div class="contact">
+         
+
+
+         <form id="form">
+            <h1>GET IN TOUCH</h1>
+            <label >Name</label>
+            <input oninput="onInput()" class="input-name" type="text" id="username" >
+            <div class="eror"></div>
+
+            <label >Email</label>
+            <input oninput="onInput()" class="input-email" type="email" id="email" >
+            <div class="eror"></div>
+
+
+            <label >Phone Number</label>
+            <input oninput="onInput()" class="input-phone" type="number" id="phone">
+            <div class="eror"></div>
+
+
+            <label >Subject</label>
+            <select oninput="onInput()" class="input-subject" id="subject">
+               <option value="">-- PLEASE SELECT YOUR SUBJECT --</option>
+               <option value="front end">Front End</option>
+               <option value="back end">Back End</option>
+               <option value="full stack">Full Stack</option>
+            </select>
+            <div class="eror"></div>
+
+
+            <label >Your Message</label>
+            <textarea oninput="onInput()" class="input-message" id="message" ></textarea>
+            <div class="eror"></div>
+
+
+            <div class="btn-submit">
+               <button type="button" id="submit" onclick="submitData()" class="eror">Submit</button>
+            </div>
+
+         </form>
+
+
+      </div>
+      <!-- contact section -->
+
+   </main>
+
+
+   <script src="/js/contact.js"></script>
+</body>
+</html>

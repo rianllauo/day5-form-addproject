@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/project.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+   <!-- navbar section -->
+   <nav>
+      <ul>
+         <div class="nav-menu">
+            <li class="nav-brand">
+               <img src="/img/brandred.png">
+            </li>
+            <li><a href="/index.html" class="menu-item">Home</a></li>
+            <li><a href="/myproject.html" class="active menu-item">My Project</a></li>
+         </div>
+         <a href="/contact.html" class="btn-contact">
+            Contact Me
+         </a>
+      </ul>
+   </nav>
+   <!-- navbar section -->
+   
+   <main>   
+      
+   <!-- form add project -->
+   <form onsubmit="addData(event)">
+      <h1>Add My Project</h1>
+
+      <div class="input-wrapper">
+         <label for="">Project Name</label>
+         <input type="text" id="title">
+      </div>
+
+      <div class="wrapper-date">
+         <div class="input-wrapper">
+            <label for="">Start Date</label>
+            <input type="date" id="date-start">
+         </div>
+
+         <div class="input-wrapper">
+            <label for="">End Date</label>
+            <input type="date" id="date-end">
+         </div>
+      </div>
+
+      <div class="input-wrapper">
+         <label for="">Description</label>
+         <textarea id="content"></textarea>
+      </div>
+
+      <div class="container-checkbox">
+
+         <label>Technologies</label>
+         <div class="container-wraper-checkbox">
+            <div class="wraper-checkbox">
+               <div class="input-wrapper-line">
+                  <input   type="checkbox" name="Node Js" id="nodeJs">
+                  <label for="nodeJs">Node Js</label>
+               </div>
+               
+               <div class="input-wrapper-line">
+                  <input   type="checkbox" name="" id="nextJs">
+                  <label for="nextJs">Next Js</label>
+               </div>
+            </div>
+   
+            <div class="wraper-checkbox">
+               <div class="input-wrapper-line">
+                  <input   type="checkbox" name="" id="reactJs">
+                  <label for="reactJs">React Js</label>
+               </div>
+               
+               <div class="input-wrapper-line">
+                  <input   type="checkbox" name="" id="typeScript">      
+                  <label for="typeScript">TypeScript</label>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+
+      <div class="input-wrapper">
+         <label for="">Upload Image</label>
+         <input type="file" id="image">
+      </div>
+
+
+      <div class="input-button">
+         <input value="Submit" type="submit">
+      </div>
+
+   </form>
+   <!-- form add project -->
+
+   <!-- project list -->
+   <div id="contents" class="container-card-project">
+
+      <!-- card render by js -->
+
+     
+
+      <!-- card render by js -->
+
+   </div>
+   <!-- project list -->
+
+   </main>
+
+   <script src="/js/project.js"></script>
+
+</body>
+</html>

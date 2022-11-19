@@ -67,7 +67,7 @@ function renderBlog(){
          <div class="card-content">
             <div class="card-header">
                <h3>${data[index].title}</h3>
-               <p>${duration(data[index].dateStart, data[index].dateEnd )}</p>
+               <p>Duration ${duration(data[index].dateStart, data[index].dateEnd)}</p>
             </div>
             <div class="card-text">
                <p>${data[index].content}</p>
@@ -86,11 +86,9 @@ function renderBlog(){
       </a>
       `
    }
-   
 }
 
 function duration(dateStart, dateEnd){
-   
    let start = dateStart
    let end = dateEnd
 

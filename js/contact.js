@@ -69,7 +69,3 @@ function inputFill(id, index){
       return success()
    }
 }
-
-
-
-

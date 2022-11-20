@@ -97,6 +97,7 @@ function duration(dateStart, dateEnd){
    let durationDays = end - start
    let days = Math.floor(durationDays / (miliseconds * 60 * 60 * 24))
    let moth = Math.floor(durationDays / (miliseconds * 60 * 60 * 24 * 30))
+   console.log(moth)
 
    if(days < 30 ){
       return `${days} days`

@@ -1,4 +1,4 @@
-// ambil setiap input dari id nya
+// megambil setiap input dari id nya
 let username = document.getElementById('username'),
    email = document.getElementById('email'),
    phone = document.getElementById('phone'),
@@ -11,6 +11,7 @@ let username = document.getElementById('username'),
 function onSubmit(){
    // menjalankan fungsi submit data pada setiap input untuk
    // mengecek apakah semua input tidak kosong  
+   // dengan parameter id dari setiap input, index, dan pesan errornya
    submitData(username, 0, 'Please input your name')
    submitData(email, 1, 'Please input your email')
    submitData(phone, 2, 'Please input your phone number')

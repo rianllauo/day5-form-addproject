@@ -28,7 +28,7 @@ function addData(event){
       nodejsImg =  '/img/nodejs.svg'
    }
    if(nextJs.checked === true){
-      nextjsImg = '/img/nextJs.svg'
+      nextjsImg = '/img/nextjs.svg'
    }
    if(reactJs.checked === true){
       reactImg = '/img/react.svg'

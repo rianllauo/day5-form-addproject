@@ -55,7 +55,7 @@ function onInput(){
    inputFill(subject, 3);
    inputFill(message, 4);
 }
-function input(id, index){
+function inputFill(id, index){
    // membuat function success
    // untuk menghilangkan error message
    function success() {
